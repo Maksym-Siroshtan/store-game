@@ -6,6 +6,8 @@
   align-items: start
   background-color: $color-gray-light
   padding: 15rem 0
+  @include respond(phone)
+    padding: 5rem 0
 
 .feature
   display: grid
@@ -17,7 +19,7 @@
     height: 4.5rem
     grid-row: 1 / span 2
     transform: translateY(-1rem)
-    
+
   &__text
     font-size: 1.6rem
     font-weight: 400
